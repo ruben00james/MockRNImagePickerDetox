@@ -5,15 +5,15 @@
     "simulator": {
       "type": "ios.simulator",
       "device": {
-        "type": "iPhone 12"
+        "type": "iPhone 13"
       }
     }
   },
   "apps": {
     "ios.debug": {
       "type": "ios.app",
-      "binaryPath": "./ios/DerivedData/MockRNImagePickerDetox/Build/Products/Debug-iphonesimulator/MockRNImagePickerDetox.app",
-      "build": "<...xcodebuild command...>"
+      "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/MockRNImagePickerDetox.app",
+      "build": "xcodebuild -workspace ios/MockRNImagePickerDetox.xcworkspace -scheme MockRNImagePickerDetox -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build"
     }
   },
   "configurations": {
